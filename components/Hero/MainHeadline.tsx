@@ -6,7 +6,7 @@ const MainHeadline = () => {
     <motion.h1
       initial={{ opacity: 0, y: -10 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4, delay: 1.5 }}
+      transition={{ duration: 0.4, delay: 1.5, ease: "easeInOut" }}
       className="absolute bottom-4 w-full flex justify-end text-end mainHeadline leading-[0.8] font-bold z-[11]"
     >
       Antonín Hošek <br /> & Topeto

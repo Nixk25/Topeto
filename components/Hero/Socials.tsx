@@ -33,7 +33,11 @@ const Socials = () => {
           key={social.label}
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: (index + 3) * 0.2, duration: 0.4 }}
+          transition={{
+            delay: (index + 3) * 0.2,
+            duration: 0.4,
+            ease: "easeInOut",
+          }}
           href={social.label}
         >
           {social.icon}
