@@ -6,8 +6,9 @@ const AboutText = () => {
   return (
     <>
       <motion.p
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.4, ease: "easeInOut", delay: 0.8 }}
         className=" tracking-wider"
       >
@@ -20,8 +21,9 @@ const AboutText = () => {
       <motion.ul
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.4, ease: "easeInOut", delay: 0.8 }}
-        className=" list-disc mt-10 ml-4 tracking-wider"
+        className=" list-disc mt-10 ml-4 tracking-wider space-y-5"
       >
         <li>
           Skupina se poprvé představila na studentském festivalu GymJam,

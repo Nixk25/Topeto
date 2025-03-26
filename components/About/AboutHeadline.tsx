@@ -6,6 +6,7 @@ const AboutHeadline = () => {
     <motion.h2
       initial={{ y: 50 }}
       whileInView={{ y: 0 }}
+      viewport={{ once: true }}
       transition={{ duration: 0.4, ease: "easeInOut", delay: 0.5 }}
       className="aboutHeadline font-bold leading-[0.8] pb-10"
     >
