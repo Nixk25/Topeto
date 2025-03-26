@@ -1,12 +1,13 @@
 "use client";
 import React from "react";
-import { EVENTS } from "@/events";
+import { EVENTS } from "@/constants/events";
 import { motion } from "motion/react";
+import DateBox from "./DateBox";
+
 const EventsList = () => {
   const now = new Date();
 
   const formatTimeLeft = (date: Date) => {
-    const now = new Date();
     const diff = date.getTime() - now.getTime();
 
     if (diff <= 0) return null;
@@ -26,6 +27,7 @@ const EventsList = () => {
     const eventDate = new Date(event.date);
     return eventDate.getTime() > now.getTime();
   });
+
   return (
     <div className="pb-20">
       {upcomingEvents.map((event, i) => {
@@ -44,26 +46,21 @@ const EventsList = () => {
               isLast ? "border-b" : "border-b-0"
             }`}
           >
-            <div className="flex">
+            <div className="flex flex-col sm:flex-row sm:gap-0 gap-5 ">
+              <DateBox eventDate={eventDate} />
               <div className="flex flex-col flex-1">
                 <h2 className="text-4xl font-bold ">{event.name}</h2>
                 <div className="flex">
                   {event.subText && <p className="text-2xl">{event.subText}</p>}
-                  <span className="text-2xl flex sm:hidden  w-full flex-1 justify-end items-center text-neutral-500">
-                    {timeText}
-                  </span>
                 </div>
                 {event.description && (
                   <p className="text-xl tracking-wide w-full text-gray-400">
                     {event.description}
                   </p>
                 )}
-                <span className="text-lg font-medium text-gray-400  block">
-                  {eventDate.toLocaleDateString("cs-CZ")}
-                </span>
               </div>
               {timeText && (
-                <span className="text-5xl hidden sm:flex  w-full flex-1 justify-center items-center text-neutral-500">
+                <span className="lg:text-8xl text-5xl flex  w-full flex-1 justify-center items-center font-black">
                   {timeText}
                 </span>
               )}

@@ -5,7 +5,7 @@ import EventsList from "./EventsList";
 
 const Events = () => {
   return (
-    <section id="events" className="h-screen ">
+    <section id="events">
       <EventsHeadline />
       <EventsList />
     </section>
