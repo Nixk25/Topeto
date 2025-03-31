@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const navItems = [
   { label: "O nás", href: "#about" },
-  { label: "Koncerty a akce", href: "#concerts" },
+  { label: "Koncerty a akce", href: "#events" },
   { label: "Kontakt", href: "#contact" },
 ];
 

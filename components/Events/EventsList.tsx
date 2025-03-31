@@ -29,7 +29,7 @@ const EventsList = () => {
   });
 
   return (
-    <div className="pb-20">
+    <div className="pb-20 ">
       {upcomingEvents.map((event, i) => {
         const eventDate = new Date(event.date);
         const timeText = formatTimeLeft(eventDate);
@@ -37,6 +37,7 @@ const EventsList = () => {
 
         return (
           <motion.div
+            id="events"
             initial={{ opacity: 0, filter: "blur(10px)" }}
             whileInView={{ opacity: 1, filter: "blur(0px)" }}
             viewport={{ once: true }}
