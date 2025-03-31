@@ -5,7 +5,7 @@ import Overlay from "./Overlay";
 
 const Hero = () => {
   return (
-    <section className="bg-[url('../public/mainBg.png')] h-[100dvh] relative bg-no-repeat bg-cover bg-[center] ">
+    <section className="bg-[url('../public/mainBg.webp')] h-[100dvh] relative bg-no-repeat bg-cover bg-[center] ">
       <Overlay />
       <Socials />
       <MainHeadline />

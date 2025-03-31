@@ -3,10 +3,10 @@ import Piano from "../public/members/piano.svg";
 import Mic from "../public/members/mic.svg";
 import Trumpet from "../public/members/trumpet.svg";
 import Drums from "../public/members/drums.svg";
-import Ondra from "../public/members/ondra.jpg";
-import Jan from "../public/members/jan.jpg";
-import OndraH from "../public/members/ondraH.jpg";
-import Tonda from "../public/members/tonda.jpg";
+import Ondra from "../public/members/ondra.webp";
+import Jan from "../public/members/jan.webp";
+import OndraH from "../public/members/ondraH.webp";
+import Tonda from "../public/members/tonda.webp";
 export const MEMBERS = [
   {
     name: "Antonín Hošek",

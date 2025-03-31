@@ -40,7 +40,7 @@ const EventsList = () => {
             initial={{ opacity: 0, filter: "blur(10px)" }}
             whileInView={{ opacity: 1, filter: "blur(0px)" }}
             viewport={{ once: true }}
-            transition={{ duration: 0.4, ease: "easeInOut", delay: 1 }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
             key={event.name}
             className={`border-slate-50 border p-4 border-x-0 ${
               isLast ? "border-b" : "border-b-0"

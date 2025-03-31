@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import aboutPhoto from "../../public/aboutPhoto.png";
+import aboutPhoto from "../../public/aboutPhoto.webp";
 import { motion } from "motion/react";
 
 const AboutImage = () => {
