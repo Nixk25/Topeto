@@ -21,7 +21,7 @@ const NavLinks = () => {
         >
           <Link
             href={item.href}
-            className="hover:text-slate-200 cursor-pointer"
+            className="hover:text-slate-200 cursor-pointer text-xs sm:text-base"
           >
             {item.label}
           </Link>

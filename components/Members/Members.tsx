@@ -14,8 +14,8 @@ const Members = () => {
         Členové
       </h2>
 
-      <div className="flex flex-col lg:flex-row gap-10 overflow-hidden">
-        <div className="h-full w-full flex-1">
+      <div className="flex flex-col order-2 xl:flex-row xl:order-1 gap-10 overflow-hidden">
+        <div className="h-full w-full flex-1 order-2">
           <Image
             src={image}
             alt={name}
@@ -25,8 +25,8 @@ const Members = () => {
           />
         </div>
 
-        <div className="relative flex flex-col  justify-between flex-1 p-5">
-          <h3 className="text-4xl lg:text-6xl font-bold">{name}</h3>
+        <div className="relative flex flex-col order-3 xl:order-2  justify-between flex-1 p-5">
+          <h3 className="text-4xl xl:text-6xl font-bold">{name}</h3>
 
           <div className="icons  w-full  mb-4">
             {icons.map(({ icon, position }, i) => (
@@ -42,19 +42,20 @@ const Members = () => {
           </div>
 
           {description && (
-            <p className="text-slate-400 text-lg lg:text-2xl">{description}</p>
+            <p className="text-slate-400 text-lg xl:text-2xl">{description}</p>
           )}
         </div>
-        <div className="flex justify-center items-center flex-col lg:flex-row gap-1 ">
+
+        <div className="flex justify-center items-center order-1 xl:order-3 flex-col xl:flex-row gap-1 ">
           {MEMBERS.map(({ name }, i) => (
             <button
               key={i}
               onClick={() => setActiveIndex(i)}
-              className={`w-full lg:w-[40px] h-full rounded-full cursor-pointer transition-colors duration-300 hover:text-[#3B3B3B]  hover:bg-slate-200 ${
+              className={`w-full xl:w-[40px] h-full rounded-full cursor-pointer transition-colors duration-300 hover:text-[#3B3B3B]  hover:bg-slate-200 ${
                 i === activeIndex ? "bg-black" : "bg-gray-400"
               }`}
             >
-              <p className="rotate-0 lg:rotate-270 uppercase  whitespace-nowrap text-xl">
+              <p className="rotate-0 xl:rotate-270 uppercase  whitespace-nowrap text-xl">
                 {name}
               </p>
             </button>

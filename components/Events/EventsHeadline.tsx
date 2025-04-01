@@ -13,7 +13,7 @@ const EventsHeadline = () => {
   const x = useTransform(
     scrollYProgress,
     [0, 1],
-    ["120%", isMobile ? "-440%" : "-380%"]
+    ["120%", isMobile ? "-520%" : "-380%"]
   );
 
   return (

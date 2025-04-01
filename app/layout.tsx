@@ -21,10 +21,13 @@ export const metadata: Metadata = {
     "hudba",
     "live show",
     "Topeto band",
+    "Topeto — Oficiální stránka kapely",
+    "Topeto — Oficiální web kapely",
+    "Kapela Vysoké Mýto",
+    "Kapela Vysoké Mýto — Oficiální stránka kapely",
   ],
   authors: [{ name: "Nicolas Melda", url: "https://nicolasmelda.com" }],
   creator: "Nicolas Melda",
-  themeColor: "#3B3B3B",
 };
 
 export default function RootLayout({
