@@ -23,7 +23,7 @@ body {
 }
 
 .mainHeadline {
-  font-size: clamp(2rem, 12vw, 12rem);
+  font-size: clamp(2rem, 11vw, 12rem);
 }
 .aboutHeadline {
   font-size: clamp(4rem, 8vw, 7rem);
