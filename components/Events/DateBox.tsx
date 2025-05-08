@@ -12,7 +12,7 @@ const DateBox = ({ eventDate }: { eventDate: Date }) => {
     "Sobota",
   ][dayNumber];
   return (
-    <div className="flex flex-col justify-center w-full sm:w-max mr-5 items-center rounded-xl bg-white text-[#3B3B3B] p-4">
+    <div className="flex flex-col justify-center w-full flex-[0.1]  mr-5 items-center rounded-xl bg-white text-[#3B3B3B] p-4">
       <span className="text-2xl font-bold">{dayName.slice(0, 2)}</span>
       <div className="flex text-sm  flex-col justify-center items-center">
         <div>

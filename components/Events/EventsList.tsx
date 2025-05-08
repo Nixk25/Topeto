@@ -49,8 +49,10 @@ const EventsList = () => {
           >
             <div className="flex flex-col sm:flex-row sm:gap-0 gap-5 ">
               <DateBox eventDate={eventDate} />
-              <div className="flex flex-col flex-1">
-                <h2 className="text-4xl font-bold ">{event.name}</h2>
+              <div className="flex flex-col flex-1 w-full">
+                <h2 className="text-2xl lg:text-4xl font-bold ">
+                  {event.name}
+                </h2>
                 <div className="flex">
                   {event.subText && <p className="text-2xl">{event.subText}</p>}
                 </div>

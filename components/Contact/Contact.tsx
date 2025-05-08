@@ -2,9 +2,9 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="px-4 p-20 bg-white">
+    <section id="contact" className="px-4 p-2">
       <div className="flex flex-col xl:flex-row bg-background p-10 xl:py-40 py-20 justify-between items-center rounded-xl">
-        <h2 className="contactHeadline text-black font-bold flex justify-center items-center mb-10">
+        <h2 className="contactHeadline text-white font-bold flex justify-center items-center mb-10 uppercase">
           Kontakty
         </h2>
         <div className="flex flex-col gap-5 items-center">

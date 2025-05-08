@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 const Socials = () => {
   const Socials = [
     {
-      url: "https://m.youtube.com/@antoninhosek6701",
+      url: "https://www.instagram.com/topeto._?igsh=cHpuZGNkMnBrd3Ni",
       icon: (
         <FaInstagram
           size={20}
@@ -20,7 +20,7 @@ const Socials = () => {
       ),
     },
     {
-      url: "https://www.instagram.com/topeto._?igsh=cHpuZGNkMnBrd3Ni",
+      url: "https://m.youtube.com/@antoninhosek6701",
       icon: (
         <FaYoutube size={20} className="hover:text-slate-200 cursor-pointer" />
       ),

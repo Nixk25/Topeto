@@ -8,7 +8,7 @@ const AboutHeadline = () => {
       whileInView={{ y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.4, ease: "easeInOut", delay: 0.5 }}
-      className="aboutHeadline font-bold leading-[0.8] pb-10"
+      className="aboutHeadline font-bold leading-[0.8] pb-10 uppercase  "
     >
       O kapele
     </motion.h2>

@@ -10,7 +10,7 @@ const Members = () => {
 
   return (
     <section className="px-4 py-10">
-      <h2 className="membersHeadline font-bold flex justify-center items-center mb-10">
+      <h2 className="membersHeadline font-bold flex justify-center items-center mb-10 uppercase">
         Členové
       </h2>
 
@@ -42,7 +42,7 @@ const Members = () => {
           </div>
 
           {description && (
-            <p className="text-slate-400 text-lg xl:text-2xl">{description}</p>
+            <p className="text-white text-lg xl:text-2xl">{description}</p>
           )}
         </div>
 
