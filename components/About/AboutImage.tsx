@@ -18,7 +18,7 @@ const AboutImage = () => {
         alt="About photo"
         width={700}
         height={700}
-        className="w-full object-cover object-top lg:h-full lg:max-h-max  "
+        className="w-full object-cover object-top h-max rounded-xl "
       />
     </motion.div>
   );
