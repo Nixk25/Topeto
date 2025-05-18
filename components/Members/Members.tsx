@@ -20,6 +20,7 @@ const Members = () => {
             src={image}
             alt={name}
             className="w-full h-full object-cover rounded-xl"
+            unoptimized
             width={400}
             height={400}
           />
@@ -36,6 +37,7 @@ const Members = () => {
                 height={200}
                 src={icon}
                 alt={name}
+                unoptimized
                 className={`absolute ${position} z-[-1] `}
               />
             ))}

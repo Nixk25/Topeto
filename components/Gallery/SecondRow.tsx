@@ -16,6 +16,7 @@ const SecondRow = () => {
         <Image
           src={photo4}
           alt="Gallery Image 3"
+          unoptimized
           className="object-cover h-full w-full rounded-xl"
         />
       </motion.div>
@@ -27,6 +28,7 @@ const SecondRow = () => {
         <Image
           src={photo3}
           alt="Gallery Image 4"
+          unoptimized
           className="object-cover h-full w-full rounded-xl"
         />
       </motion.div>

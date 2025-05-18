@@ -1,3 +1,10 @@
+export type Event = {
+  name: string;
+  date: Date;
+  subText?: string;
+  description?: string;
+};
+
 export const EVENTS = [
   {
     name: "Střelecký ostrov + Otázka času",
